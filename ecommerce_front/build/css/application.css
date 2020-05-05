@@ -1,28 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
 html {
   height: 100%;
-  min-height: 100%; }
+  min-height: 100%;
+  font-family: "Montserrat", sans-serif; }
 
 body {
   height: 100%;
   min-height: 100%;
-  background: #fefefe; }
+  background: #fefefe;
+  font-family: "Montserrat", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif; }
 
 .btn-red-default {
-  background-color: #FE2740;
+  background-color: deepskyblue;
   color: #f1f1f1; }
   .btn-red-default:hover, .btn-red-default:active {
-    background-color: #ed283b;
+    background-color: dodgerblue;
     color: #f1f1f1;
     transition: .3s all; }
 
+.btn-blue-default {
+  background-color: deepskyblue;
+  color: #f1f1f1; }
+  .btn-blue-default:hover, .btn-blue-default:active {
+    background-color: dodgerblue;
+    color: #f1f1f1;
+    transition: .3s all; }
+
+.btn-blue-dark-default {
+  background-color: dodgerblue;
+  color: #f1f1f1; }
+  .btn-blue-dark-default:hover, .btn-blue-dark-default:active {
+    background-color: deepskyblue;
+    color: #f1f1f1;
+    transition: .3s all; }
+
+.form-control.focus, .form-control.active, .form-controlhover {
+  box-shadow: none;
+  border-color: darkslategrey; }
+
 .upper {
   text-transform: uppercase !important; }
+
+.block {
+  display: block; }
+
+.title {
+  font-size: 1.5em; }
+
+.subtitle {
+  padding: 0 0 1em 0;
+  display: block; }
+
+.bold {
+  font-weight: bold; }
 
 #header {
   position: relative;
   height: 100%;
   min-height: 100%;
   background: #fefefe; }
+  #header.no-height {
+    height: auto;
+    min-height: auto; }
   #header .logo {
     z-index: 3;
     padding: 4rem 0; }
@@ -32,11 +74,11 @@ body {
     padding: 7rem 0 0 0;
     z-index: 3; }
     #header .account .shopping {
-      border-left: 1px solid #ed283b; }
+      border-left: 2px solid dodgerblue; }
   #header .navbar {
     min-height: 4em;
     z-index: 1;
-    background: #FE2740;
+    background: deepskyblue;
     border: none; }
     #header .navbar .navbar-nav li a {
       color: #f1f1f1;
@@ -93,7 +135,7 @@ body {
 
 #footer {
   padding: 4.5em 0;
-  background: #FE2740; }
+  background: deepskyblue; }
   #footer .img-logo img {
     width: 15em;
     display: inline; }
@@ -112,3 +154,62 @@ body {
       font-size: 1.3em; }
     #footer .social .instagram {
       font-size: 1.3em; }
+
+#products {
+  padding: 2em 0; }
+  #products .cat .list-group {
+    border-right: 1px solid #ececec; }
+    #products .cat .list-group .list-group-item {
+      border: 0;
+      border-top: 1px #ececec; }
+      #products .cat .list-group .list-group-item:first-child {
+        border: 0; }
+      #products .cat .list-group .list-group-item a {
+        color: darkslategrey;
+        text-transform: capitalize; }
+        #products .cat .list-group .list-group-item a:hover, #products .cat .list-group .list-group-item a:active {
+          color: dodgerblue;
+          text-decoration: none; }
+  #products .list_pro .product_item {
+    margin: 1.5em 0; }
+    #products .list_pro .product_item .preview {
+      position: relative; }
+    #products .list_pro .product_item .info {
+      text-align: center;
+      border: 1px solid #ececec;
+      padding: 1em; }
+      #products .list_pro .product_item .info .price {
+        position: relative; }
+        #products .list_pro .product_item .info .price strong {
+          display: block;
+          padding: 1em 0; }
+
+#line {
+  position: relative;
+  width: 100%;
+  height: 8em;
+  background: dodgerblue; }
+
+#steps {
+  text-align: center;
+  padding: 2em 0; }
+  #steps .title {
+    padding: 0 0 1em 0; }
+  #steps .step i {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    font-size: 2.5em;
+    color: #f1f1f1;
+    padding: 1em; }
+    #steps .step i.one {
+      background: #ed283b; }
+    #steps .step i.two {
+      background: #02874b; }
+    #steps .step i.three {
+      background: #209c9b; }
+    #steps .step i h4 {
+      color: darkslategrey;
+      padding: 0.5em 0; }
+    #steps .step i p {
+      color: #333333; }
